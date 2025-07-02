@@ -1,4 +1,4 @@
-# Test technique Ubiquid – Développeur Web Fullstack
+# Test technique Ubiquid
 
 ![header](./header.png)
 
@@ -17,7 +17,10 @@ Ce test a pour but d’évaluer vos compétences en développement web fullstack
 
 ## 🚀 Installation
 
-- Créer une fork du [repository](https://github.com/adam-ubiquid/test_technique)
+- Créer un nouveau repository (sur votre compte perso) à partir de ce [template](https://github.com/adam-ubiquid/test_technique)
+
+![template](./template.png)
+
 - Le projet est découpé en deux packages :
   - L’interface utilisateur : `/packages/ui`
   - L’API backend : `/packages/api`
@@ -97,7 +100,7 @@ Ce dernier devra retourner un objet JSON contenant les statistiques suivantes :
 
 - Qualité du code (lisibilité, organisation, bonnes pratiques)
 - Pertinence fonctionnelle (respect des specs / maquette)
-- Utilisation raisonnable de librairies externes
+- Vous pouvez utiliser des librairies externes
 
 ## Rendu
 
