@@ -71,7 +71,7 @@ import { db } from "../db/db"; // -> packages/api/db/db.js
 
 ---
 
-### Exercice 3 : Création d’un endpoint de statistiques
+### Exercice Bonus : Création d’un endpoint de statistiques
 
 Un client souhaite visualiser des statistiques sur les offres d’emploi. Votre mission est d’ajouter un endpoint :
 
