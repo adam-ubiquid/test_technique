@@ -11,11 +11,13 @@ Ce test a pour but d’évaluer vos compétences en développement web fullstack
 ## ⚙️ Prérequis
 
 - Node.js LTS (v22) — à installer de préférence via [NVM](https://github.com/nvm-sh/nvm)
+- Un compte [Github](https://github.com)
 
 ---
 
 ## 🚀 Installation
 
+- Créer une fork du [repository](https://github.com/adam-ubiquid/test_technique)
 - Le projet est découpé en deux packages :
   - L’interface utilisateur : `/packages/ui`
   - L’API backend : `/packages/api`
@@ -39,7 +41,7 @@ npm run dev
 
 ---
 
-## 🧠 Exercices
+## Exercices
 
 Nous souhaitons construire une interface web permettant de gérer des offres d’emploi.
 
@@ -47,14 +49,14 @@ La maquette est disponible ici : [Figma – Jobtalk](https://www.figma.com/desig
 
 ---
 
-### 📝 Exercice 1 : Affichage de la liste des offres
+### Exercice 1 : Affichage de la liste des offres
 
 - Implémenter dans l’UI la liste des offres d’emploi avec les filtres et tris visibles dans la maquette.
 - Endpoint pour récupérer la liste : `GET http://localhost:3000/jobs/list`
 
 ---
 
-### ✏️ Exercice 2 : Fonctions CRUD
+### Exercice 2 : Fonctions CRUD
 
 - Implémenter les fonctionnalités de création, édition et suppression d’offres d’emploi côté API et UI.
 - Utiliser les modales (cf. maquette) pour les formulaires.
@@ -66,7 +68,7 @@ import { db } from "../db/db"; // -> packages/api/db/db.js
 
 ---
 
-### 📊 Exercice 3 : Création d’un endpoint de statistiques
+### Exercice 3 : Création d’un endpoint de statistiques
 
 Un client souhaite visualiser des statistiques sur les offres d’emploi. Votre mission est d’ajouter un endpoint :
 
@@ -74,28 +76,30 @@ Un client souhaite visualiser des statistiques sur les offres d’emploi. Votre 
 GET /jobs/stats
 ```
 
-Ce dernier devra retourner un objet JSON contenant au minimum les statistiques suivantes :
+Ce dernier devra retourner un objet JSON contenant les statistiques suivantes :
 
 ```json
 {
-  "averageSalary": number,             // Salaire moyen des offres
-  "mostCommonContractType": string,   // Type de contrat le plus fréquent
-  "mostCommonJobTitle": string,       // Intitulé de poste le plus proposé
-  "offersPerCity": {                  // Répartition du nombre d'offres par ville
+  "averageSalary": 12, // Salaire moyen des offres
+  "mostCommonContractType": "cdi", // Type de contrat le plus fréquent
+  "mostCommonJobTitle": "fullstack", // Intitulé de poste le plus proposé
+  "offersPerCity": {
+    // Répartition du nombre d'offres par ville
     "Paris": 12,
-    "Lyon": 5,
-    "Remote": 8
+    "Lyon": 5
   }
 }
 ```
 
-> 💡 Vous pouvez enrichir la réponse avec d’autres indicateurs si vous le jugez pertinent (ex. : nombre d’offres par type de contrat, fourchette de salaires, etc.).
-
 ---
 
-## ✅ Consignes générales
+## Consignes générales
 
 - Qualité du code (lisibilité, organisation, bonnes pratiques)
 - Pertinence fonctionnelle (respect des specs / maquette)
-- Autonomie et capacité à proposer des améliorations simples mais utiles
 - Utilisation raisonnable de librairies externes
+
+## Rendu
+
+Une fois que vous avez fait les exercices, veuillez nous faire parvenir votre repository Github.
+Merci pour votre temps et bon courage !
